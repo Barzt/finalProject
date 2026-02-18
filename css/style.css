@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap');
+
+html, body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	background-color: #b7dff2;
+	direction: rtl;
+}
+
+.page-title {
+    text-align: center;
+    padding-bottom: 20px;
+    margin: 0;
+    color: #01013c;
+}
+
+.flex-column-container-body {
+	width: min(92%, 1200px);
+	margin: 0 auto;
+	background-color: transparent;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.flex-container-header {
+	background-color: transparent;
+	color: rgb(1, 1, 60);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1% 2%;
+	gap: 1%;
+	flex-wrap: wrap;
+	flex-direction: row-reverse;
+	direction: ltr;
+}
+
+.header-links {
+	display: flex;
+	direction: rtl;
+	gap: 1rem;
+	flex-wrap: wrap;
+	font-family: 'Assistant', sans-serif;
+	font-size: clamp(0.85rem, 1.2vw, 0.95rem);
+	color: rgb(1, 1, 60);
+}
+
+.header-links a {
+	color: rgb(1, 1, 60);
+	text-decoration: none;
+	font-family: 'Assistant', sans-serif;
+}
+
+.header-links svg {
+	width: 16px;
+	height: 16px;
+	flex: 0 0 16px;
+}
+
+.header-logo {
+	font-family: 'Calibri', sans-serif;
+	font-size: clamp(2rem, 4vw, 3rem);
+	font-weight: bold;
+}
+
+.header-user {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+	direction: ltr;
+}
+
+.user-icon {
+	width: 16px;
+	height: 16px;
+	stroke: rgb(1, 1, 60);
+	fill: none;
+	stroke-width: 2;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+.logout-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.35rem;
+	text-decoration: none;
+	color: rgb(1, 1, 60);
+	direction: ltr;
+}
+
+.logout-icon {
+	width: 16px;
+	height: 16px;
+	stroke: rgb(1, 1, 60);
+	fill: none;
+	stroke-width: 2;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+.flex-container-nav {
+	border-bottom: 1px solid black;
+	display: flex;
+	direction: rtl;
+	padding: 1% 2%;
+	font-family: 'Assistant', sans-serif;
+	flex-wrap: wrap;
+	gap: 0.75rem;
+	justify-content: center;
+}
+
+.flex-container-nav > a {
+	text-decoration: none;
+	color: black;
+	font-size: clamp(0.85rem, 1.2vw, 0.95rem);
+	padding-inline-start: 0.5rem;
+}
+
+.flex-container-nav > a.is-active {
+	font-weight: 700;
+	font-size: 1.05rem;
+	text-decoration: none;
+}
+
+a[href="#"] {
+	position: relative;
+	cursor: not-allowed;
+}
+
+a[href="#"]:hover::after {
+	content: "This screen has not been implemented yet.";
+	position: absolute;
+	bottom: -2.2rem;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: rgba(0, 0, 0, 0.85);
+	color: white;
+	font-size: 0.75rem;
+	padding: 0.4rem 0.6rem;
+	border-radius: 0.4rem;
+	white-space: nowrap;
+	z-index: 1000;
+	pointer-events: none;
+}
+
+a[href="#"]:hover::before {
+	content: "";
+	position: absolute;
+	bottom: -0.6rem;
+	left: 50%;
+	transform: translateX(-50%);
+	border-width: 6px;
+	border-style: solid;
+	border-color: transparent transparent rgba(0, 0, 0, 0.85) transparent;
+}
+
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	min-height: 100%;
+}
+
+.info-card,
+.pattern-card,
+.dream-card,
+.form-section {
+	background-color: #ffffff;
+}
+
+.info-card a,
+.pattern-card a {
+	display: inline-block;
+	margin-top: 10px;
+	text-decoration: none;
+}
+
+.flex-container-footer {
+	border-top: 1px solid black;
+	display: flex;
+	direction: rtl;
+	font-family: 'Assistant', sans-serif;
+	flex-wrap: wrap;
+	gap: 0.75rem;
+	padding: 1% 2%;
+}
+
+.flex-container-footer > a {
+	text-decoration: none;
+	color: black;
+	font-size: clamp(0.85rem, 1.2vw, 0.95rem);
+	padding: 0.5rem 0.75rem;
+	direction: rtl;
+}
