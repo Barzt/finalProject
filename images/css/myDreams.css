@@ -1,0 +1,91 @@
+/* Main layout container for dreams page */
+.dreams-main-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    width: 100%;
+    min-height: calc(100vh - 150px);
+    padding: 40px 0;
+    direction: rtl;
+}
+
+.dreams-section-center {
+    width: 90%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.dreams-title {
+    text-align: center;
+    font-family: 'Assistant', sans-serif;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #1a1a3c;
+    margin: 0;
+    width: 100%;
+}
+
+.dreams-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center; 
+}
+
+/* Dream card styling with white background */
+.dream-card {
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border-right: 6px solid #5c7cfa;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+
+/* Dream card header with metadata */
+.dream-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    padding-bottom: 12px;
+    margin-bottom: 15px;
+}
+
+/* Container for dream tags/labels */
+.dream-tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    justify-content: flex-start;
+}
+
+.dream-tag {
+    display: inline-block;
+    background-color: #1a1a3c;
+    color: #ffffff !important;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    user-select: none;
+    cursor: default;
+    transition: 0.2s;
+}
+
+/* Tag hover effect */
+.dream-tag:hover {
+    background-color: #5c7cfa;
+    transform: scale(1.05);
+}

@@ -1,0 +1,82 @@
+header {
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.patterns-hero-section {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.patterns-hero-section h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.patterns-hero-section p {
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.patterns-cards-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.pattern-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  width: 250px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pattern-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+}
+
+.pattern-card h3 {
+  margin-top: 0;
+  color: #5a5acf;
+}
+
+.pattern-card p {
+  color: #555;
+}
+
+.pattern-card a {
+  color: white;
+  background-color: #5a5acf;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.pattern-card a:hover {
+  background-color: #3f3fbf;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .patterns-cards-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
